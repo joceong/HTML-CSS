@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<body style="height: 3000px;
+    padding-top: 60px;
+    padding-left: 80px;">
+
+    <div style="background-color: black;
+    color: white;
+    position: fixed; /*the position is fixed on the screen even though you scroll away*/
+    top: 0px;
+    left: 50px;
+    right: 50px; /*stretch*/
+    height: 50px; /*use 'height' if dont want the height to be resized when resizing the windows size*/
+    z-index: 0; /*by default is 0, to determine who overlaps who*/">
+    header</div>
+
+    <div style="background-color: green;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    width: 72px;
+    height: 100%;">sidebar    
+    <div style="position: absolute; /*it will scroll together since it is nested in 'fixed'*/
+        background-color: red;
+        color: white;
+        top: 0px;
+        right: 0px;">X</div>
+    </div>
+
+    <div style="position: absolute;
+    background-color: red;
+    color: white;
+    right: 60px;
+    top: 60px;">absolute</div>
+
+    <div style="background-color: lightblue;
+    height: 200px;
+    width: 200px;">div 1</div>
+    <div style="background-color: lightpink;
+    height: 200px;
+    width: 200px;
+    position: relative;">div 2
+    <div style="position: absolute;
+        background-color: black;
+        color: white;
+        bottom: 10px;
+        right: 10px; /*10px spaces on the right*/;">5:00</div>
+    </div>
+
+</body>
+</html>

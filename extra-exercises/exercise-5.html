@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 - Relative</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Roboto, Arial;
+        }
+
+        .clothes-details {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            cursor: pointer;
+            transition: height 2s, opacity 2s;
+        }
+
+        .clothes-pic {
+            width: 100%;
+            height: 100%;
+        }
+
+        .discount-tag {
+            position: absolute;
+            background-color: black;
+            color: white;
+            top: 10px;
+            right: 63px;
+            padding: 8px 15px 8px 15px;
+        }
+
+        .add-to-cart-slider {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 255, 255, 0.737);
+            bottom: 0;
+            right: 0;
+            left: 0;
+            overflow: hidden;
+        }
+
+        .clothes-details:hover .add-to-cart-slider {
+            height: 150px;
+            opacity: 1;
+        }
+
+        .add-to-cart-button {
+            background-color: white;
+            padding: 8px 20px 8px 20px;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="clothes-details">
+            <img class="clothes-pic" src="https://static-01.daraz.pk/p/1cd8456dd64abf9102541e56fe79dfac.jpg">
+            <div class="discount-tag">20% OFF</div>
+            <div class="add-to-cart-slider">
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

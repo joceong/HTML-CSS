@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Practicet</title>
+</head>
+<body style="padding-bottom: 1000px;">
+    <div style="
+        display: flex; /*more flexible, when add more texts, it will expand horizontally*/
+        flex-direction: row;
+        border-style: solid;
+        border-width: 1px;
+        border-color: grey;">
+        <div style="background-color: lightblue;">div 1 text</div>
+        <div style="background-color: lightpink;">div 2<p>text</p></div> <!--still maintain vertical alignment-->
+    </div>
+
+    <div style="
+        display: flex; /*more flexible, when add more texts, it will expand horizontally*/
+        flex-direction: row;
+        margin-top: 30px;">
+        <div style="background-color: lightblue; width: 100px;">div 1 text</div>
+        <div style="background-color: lightpink; flex:1">flex: 1<p>text</p></div> <!--still maintain vertical alignment-->
+    </div>
+
+    <p>Before:</p>
+    <div style="
+        display: flex; /*more flexible, when add more texts, it will expand horizontally*/
+        flex-direction: row;
+        margin-top: 30px;">
+        <div style="background-color: lightblue; width: 100px;">100px</div>
+        <div style="background-color: lightpink; flex:1">flex: 1<p>text</p></div> <!--still maintain vertical alignment-->
+        <div style="background-color: lightgreen; flex:2;">flex: 2</div>
+    </div>
+
+    <p>After:</p>
+    <div style="
+        display: flex; /*more flexible, when add more texts, it will expand horizontally*/
+        flex-direction: row;
+        margin-top: 30px;">
+        <div style="background-color: lightpink; flex:1">flex: 1<p>text</p></div> <!--still maintain vertical alignment-->
+        <div style="background-color: lightblue; width: 100px;">100px</div>
+        <div style="background-color: lightgreen; flex:2;">flex: 2</div>
+    </div>
+
+    <div style="
+        display: flex; /*more flexible, when add more texts, it will expand horizontally*/
+        flex-direction: row;
+        height: 70px;
+        margin-top: 30px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: grey;
+        justify-content: start; /*start from the left; can do center and end also*/"
+        >
+        <div style="background-color: lightpink; width: 100px">100px</div>
+        <div style="background-color: lightblue; width: 100px;">100px</div>
+        <div style="background-color: lightgreen; width: 100px;">100px</div>
+    </div>
+
+    <div style="
+        display: flex; /*more flexible, when add more texts, it will expand horizontally*/
+        flex-direction: row;
+        height: 70px;
+        margin-top: 30px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: grey;
+        justify-content: space-between; /*start from the left; can do center and end also*/"
+        >
+        <div style="background-color: lightpink; width: 100px">100px</div>
+        <div style="background-color: lightblue; width: 100px;">100px</div>
+        <div style="background-color: lightgreen; width: 100px;">100px</div>
+    </div>
+
+    <div style="
+        display: flex; /*more flexible, when add more texts, it will expand horizontally*/
+        flex-direction: row;
+        height: 70px;
+        margin-top: 30px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: grey;
+        justify-content: space-between; /*start from the left; can do center and end also*/
+        align-items: center; /*align its position in vertical axis*/"
+        >
+        <div style="background-color: lightpink; width: 100px">100px</div>
+        <div style="background-color: lightblue; width: 100px;">100px</div>
+        <div style="background-color: lightgreen; width: 100px;">100px</div>
+    </div>
+
+</body>
+</html>

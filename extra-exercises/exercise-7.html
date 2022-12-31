@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            max-height: 100vw;
+            display: grid;
+            place-content: center;
+        }
+
+        h1 {
+            font-size: 5rem;
+            font-family: 'raleway';
+            position: relative;
+            transition: 0.2s;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgb(170, 104, 232);
+            z-index: -10;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            transform-origin: left bottom;
+        }
+
+        h1:hover .slide {
+            transform: scaleX(1)
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover Me
+        <div class="slide"></div>
+    </h1>
+</body>
+</html>

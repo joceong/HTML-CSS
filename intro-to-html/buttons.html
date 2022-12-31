@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .subscribe-button { /*targets all tags labelled as 'button'*/
+        background-color: rgb(201, 0, 0);
+        color: white; /*text colour*/
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 2px; /*how round the corners of the border are*/
+        cursor: pointer; /*when hover over it, the cursor turns to a pointer (it gives clickable feeling)*/
+        margin-right: 8px; /*gives spaces to the right*/
+        box-shadow: 5px 100px;
+        transition: opacity 0.15s; /*slowly transitions to opacity in 1 second*/
+    }
+
+    .subscribe-button:hover { /*changes colour when hover over it*/
+        opacity: 0.8; /*opacity ranges from 0 to 1, makes it see through*/
+    }
+
+    .subscribe-button:active { /*changes colour when element is clicked*/
+        opacity: 0.5;
+    }
+
+    .join-button {
+        height: 36px;
+        width: 62px;
+        border-color: rgb(41,118,211);
+        border-radius: 2px;
+        background-color: white;
+        color:rgb(41,118,211);
+        cursor: pointer;
+        border-style: solid; /*solid colour all throughout the border, not half half different colours*/
+        border-width: 1.5px;
+        transition: background-color 0.5s, color 0.5s; /*if we put transition in hover class, it will not show the transition when we move the cursor out of that element*/
+    }
+
+    .join-button:hover {
+        background-color: rgb(41,118,211);
+        color: white;
+    }
+
+    .join-button:active {
+        opacity: 0.7;
+    }
+
+    .tweet-button {
+        border-radius: 50px;
+        background-color: rgba(2,158,255);
+        color: white;
+        height: 36px;
+        width: 74px;
+        border: none;
+        margin-left: 8px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        transition: box-shadow 0.15s;
+    }
+
+    .tweet-button:hover {
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    }
+</style>
+<body>
+    <button class="subscribe-button">SUBSCRIBE</button>
+    <button class="join-button">JOIN</button>
+    <button class="tweet-button">Tweet</button>
+</body>
+</html>

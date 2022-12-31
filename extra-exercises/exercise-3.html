@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 - Grid</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .add-friends-section {
+            display: inline-grid;
+            grid-template-columns: 200px 200px 200px;
+            column-gap: 20px;
+            width: 300px;
+        }
+
+        .individual-column {
+            width: 200px;
+            height: 300px;
+            box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+        }
+
+        .profile-pic-section {
+            width: 100%;
+            height: 200px;
+        }
+
+        .profile-pic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .friends-info {
+            padding: 10px 6px 0px 6px;
+            font-size: 15px;
+            flex: 1;
+        }
+
+        .name {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .mutual-friends-grid {
+            display: grid;
+            grid-template-columns: 30px 1fr;
+            align-items: center; /*can use vertical-align: middle also*/
+            column-gap: 8px;
+            margin-bottom: 3px;
+        }
+
+        .mutual-friend-pic {
+            width: 100%;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 20px;
+            object-position: 0 -10px;
+        }
+
+        .add-friend-button {
+            cursor: pointer;
+            background-color: rgb(37, 119, 240);
+            color: white;
+            border: none;
+            padding: 5px 15px 5px 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="add-friends-section">
+        <div class="individual-column">
+            <div class="profile-pic-section">
+                <img class="profile-pic" src="https://catdogfish.com/wp-content/uploads/2016/06/mensweardog.jpg">
+            </div>
+            <div class="friends-info">
+                <div class="name">Rex</div>
+                <div class="mutual-friends-grid">
+                    <div>
+                        <img class="mutual-friend-pic" src="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80">
+                    </div>
+                    <div style="color: rgb(109, 109, 109); font-size: 14px;">2 mutual friends</div>
+                </div>
+                <div>
+                    <button class="add-friend-button">Add Friend</button>
+                </div>
+            </div>
+        </div>
+        <div class="individual-column">
+            <div class="profile-pic-section">
+                <img class="profile-pic" src="https://images.unsplash.com/photo-1627719326016-6029c04d1f48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZnVubnklMjBkb2d8ZW58MHx8MHx8&w=1000&q=80">
+            </div>
+            <div class="friends-info">
+                <div class="name">Oliver</div>
+                <div class="mutual-friends-grid">
+                    <div>
+                        <img class="mutual-friend-pic" src="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80">
+                    </div>
+                    <div style="color: rgb(109, 109, 109); font-size: 14px;">3 mutual friends</div>
+                </div>
+                <div>
+                    <button class="add-friend-button">Add Friend</button>
+                </div>
+            </div>
+        </div>
+        <div class="individual-column">
+            <div class="profile-pic-section">
+                <img class="profile-pic" src="https://thumbs.dreamstime.com/b/dog-watching-tv-couch-chihuahua-movie-sitting-red-sofa-remote-control-changing-channels-popcorn-91841695.jpg">
+            </div>
+            <div class="friends-info">
+                <div class="name">Mimi</div>
+                <div class="mutual-friends-grid">
+                    <div>
+                        <img class="mutual-friend-pic" src="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80">
+                    </div>
+                    <div style="color: rgb(109, 109, 109); font-size: 14px;">4 mutual friends</div>
+                </div>
+                <div>
+                    <button class="add-friend-button">Add Friend</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
